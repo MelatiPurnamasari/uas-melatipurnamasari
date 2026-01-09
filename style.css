@@ -1,0 +1,386 @@
+/* =======================
+   RESET & GLOBAL
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h1 {
+  color: #ff7a00;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ff7a00;
+}
+
+/* =======================
+   HERO
+======================= */
+.hero {
+  height: 90vh;
+  background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
+    url("assets/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-content span {
+  color: #ff7a00;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  color: #f0f0f0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 28px;
+  background: #ff7a00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #ff9a3c;
+}
+
+/* =======================
+   QUICK STATS
+======================= */
+.quick-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 8%;
+  background: #111;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 34px;
+  color: #ff7a00;
+}
+
+.stat-box p {
+  color: #ddd;
+}
+
+/* =======================
+   GENERAL SECTION
+======================= */
+section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* =======================
+   COMPANY STORY
+======================= */
+.company-story {
+  background: #151515;
+}
+
+/* =======================
+   VISION & MISSION
+======================= */
+.vm-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vm-box {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  border-top: 4px solid #ff7a00;
+}
+
+/* =======================
+   TEAM
+======================= */
+.team-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+  text-align: center;
+}
+
+/* FOTO TEAM BULAT */
+.team-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff7a00;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  color: #ff7a00;
+}
+
+.team-card p {
+  color: #ddd;
+}
+
+/* =======================
+   VALUES
+======================= */
+.values-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.value-box {
+  background: #ff7a00;
+  color: #000;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* =======================
+   PROGRAM TABLE
+======================= */
+.program-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.program-table th {
+  background: #ff7a00;
+  color: #000;
+  padding: 15px;
+}
+
+.program-table td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+/* =======================
+   SIGNATURE PROGRAMS
+======================= */
+.signature-programs {
+  background:
+    linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.9)),
+    url("assets/bg-program.jpg") center/cover no-repeat;
+}
+
+.signature-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.signature-card {
+  background: rgba(0,0,0,.7);
+  padding: 30px;
+  border-radius: 18px;
+  width: 300px;
+  border-left: 4px solid #ff7a00;
+}
+
+/* =======================
+   FACILITIES
+======================= */
+.facilities-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.facility-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
+  border-bottom: 4px solid #ff7a00;
+}
+
+/* =======================
+   GALLERY
+======================= */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* =======================
+   CONTACT & MAP
+======================= */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.location-box,
+.contact-info {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  border: none;
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  background: #000;
+  padding-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 30px;
+  padding: 0 8%;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff7a00;
+}
+
+/* =======================
+   CONTACT SUPPORT
+======================= */
+.contact-support {
+  background: #111;
+  padding: 40px 8%;
+}
+
+.support-item {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* =======================
+   FAQ
+======================= */
+.faq {
+  background: #151515;
+}
+
+.faq-item {
+  max-width: 750px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* =======================
+   COPYRIGHT
+======================= */
+.footer-bottom {
+  background: #000;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

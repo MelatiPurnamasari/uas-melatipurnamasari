@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservasi | SMARTFIT HUB</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+  <div class="reservation-container">
+    <h1>Reservasi Kelas / Trial</h1>
+    <p>Isi formulir berikut untuk melakukan reservasi</p>
+
+    <form action="#" method="post">
+
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="hp">Nomor HP</label>
+        <input type="tel" id="hp" name="hp" required>
+      </div>
+
+      <!-- JENIS PROGRAM -->
+      <div class="form-group">
+        <label for="program">Jenis Program</label>
+        <select id="program" name="program" required>
+          <option value="">-- Pilih Program --</option>
+          <option>Trial Membership</option>
+          <option>Yoga</option>
+          <option>HIIT Training</option>
+          <option>Zumba</option>
+          <option>Personal Training</option>
+          <option>Body Transformation</option>
+        </select>
+      </div>
+
+      <!-- PILIH CABANG -->
+      <div class="form-group">
+        <label for="cabang">Pilih Cabang</label>
+        <select id="cabang" name="cabang" required>
+          <option value="">-- Pilih Cabang --</option>
+          <option>Jakarta</option>
+          <option>Bandung</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tanggal">Tanggal Reservasi</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+      </div>
+
+      <div class="form-group">
+        <label for="jam">Jam</label>
+        <select id="jam" name="jam" required>
+          <option value="">-- Pilih Jam --</option>
+          <option>06:00</option>
+          <option>08:00</option>
+          <option>10:00</option>
+          <option>14:00</option>
+          <option>16:00</option>
+          <option>18:00</option>
+          <option>20:00</option>
+        </select>
+      </div>
+
+      <!-- CATATAN -->
+      <div class="form-group">
+        <label for="catatan">Catatan Khusus</label>
+        <textarea id="catatan" name="catatan" rows="4" placeholder="Contoh: cedera lutut, pemula, dll"></textarea>
+      </div>
+
+      <!-- CHECKBOX KONFIRMASI -->
+      <div class="form-check">
+        <input type="checkbox" id="konfirmasi" required>
+        <label for="konfirmasi">
+          Saya menyatakan data yang diisi sudah benar
+        </label>
+      </div>
+
+      <button type="submit" class="btn-submit">Kirim Reservasi</button>
+    </form>
+
+    <div class="back-link">
+      <a href="index.html">← Kembali ke Beranda</a>
+    </div>
+  </div>
+
+
+</body>
+</html>
