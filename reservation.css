@@ -201,3 +201,31 @@ body {
     margin: 40px 15px;
   }
 }
+
+
+/* =======================
+   CONTACT SUPPORT
+======================= */
+.contact-support {
+  background: #111;
+  padding: 40px 8%;
+}
+
+.support-item {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* =======================
+   FAQ
+======================= */
+.faq {
+  background: #151515;
+}
+
+.faq-item {
+  max-width: 750px;
+  margin: 20px auto;
+  text-align: left;
+}
