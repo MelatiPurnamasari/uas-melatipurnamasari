@@ -56,7 +56,7 @@ nav ul li a:hover {
   height: 90vh;
   background:
     linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
-    url("assets/Background\ .jpg") center/cover no-repeat;
+    url("assets/images/Background .jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,3 +447,4 @@ section h2 {
     justify-content: center;
   }
 }
+
