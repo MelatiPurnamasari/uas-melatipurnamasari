@@ -1,6 +1,6 @@
-/* =======================
+/* ==================================================
    RESET & GLOBAL
-======================= */
+================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +14,28 @@ body {
   line-height: 1.6;
 }
 
-/* =======================
+section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* ==================================================
    NAVBAR
-======================= */
+================================================== */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: #000;
   position: sticky;
   top: 0;
   z-index: 100;
+  background: #000;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav h1 {
@@ -34,32 +44,33 @@ nav h1 {
 }
 
 nav ul {
+  list-style: none;
   display: flex;
   gap: 20px;
-  list-style: none;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
   color: #ff7a00;
 }
 
-/* =======================
+/* ==================================================
    HERO
-======================= */
+================================================== */
 .hero {
   height: 90vh;
   background:
     linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
-    url("assets/images/Background\ .jpg") center/cover no-repeat;
+    url("assets/images/Background .jpg") center/cover no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -86,95 +97,38 @@ nav ul li a:hover {
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn:hover {
   background: #ff9a3c;
 }
 
-/* STATS */
+/* ==================================================
+   STATS
+================================================== */
 .stats {
   background: #0f172a;
-  color: white;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 
 .stat h3 {
+  font-size: 36px;
   color: #ff7a18;
-  font-size: 36px;
 }
 
-/* =======================
-   GENERAL SECTION
-======================= */
-section {
-  padding: 70px 8%;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-/* ABOUT – GLOBAL */
-.about,
-.company-story,
-.vision-mission,
-.team {
-  padding: 80px 60px;
-  text-align: center;
-}
-
-/* JUDUL SECTION */
-.about h2,
-.company-story h2,
-.vision-mission h2,
-.team h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: #111;
-  position: relative;
-}
-
-.about h2::after,
-.company-story h2::after,
-.vision-mission h2::after,
-.team h2::after {
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: #00e0ff;
-  display: block;
-  margin: 15px auto 0;
-  border-radius: 10px;
-}
-
-/* ABOUT */
-.about {
-  background: #f5f7fa;
-}
-
-/* COMPANY STORY */
+/* ==================================================
+   COMPANY STORY
+================================================== */
 .company-story {
-  background: #ffffff;
+  background: #151515;
 }
 
-.company-story p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #555;
-}
-
-/* VISI & MISI */
-.vision-mission {
-  background: #f5f7fa;
-}
-
+/* ==================================================
+   VISION & MISSION
+================================================== */
 .vm-container {
   display: flex;
   gap: 30px;
@@ -183,97 +137,94 @@ section h2 {
 }
 
 .vm-box {
-  background: #ffffff;
+  background: #1c1c1c;
   padding: 30px;
-  border-radius: 20px;
-  max-width: 400px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  width: 320px;
+  border-top: 4px solid #ff7a00;
 }
 
-.vm-box h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #00bcd4;
-}
-
-.vm-box p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.7;
-}
-
-/* TEAM */
-.team {
-  background: #ffffff;
-}
-
+/* ==================================================
+   TEAM
+================================================== */
 .team-container {
   display: flex;
+  gap: 30px;
   justify-content: center;
-  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 40px;
 }
 
 .team-card {
-  background: #f5f7fa;
+  background: #1c1c1c;
   padding: 30px;
-  border-radius: 25px;
+  border-radius: 20px;
   width: 260px;
   text-align: center;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
 }
 
-.team-card:hover {
-  transform: translateY(-10px);
-}
-
-/* FOTO BULAT */
 .team-card img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #00e0ff;
-  margin-bottom: 20px;
+  border: 4px solid #ff7a00;
+  margin-bottom: 15px;
 }
 
-/* NAMA & ROLE */
 .team-card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #111;
+  color: #ff7a00;
 }
 
 .team-card p {
-  font-size: 14px;
-  color: #777;
-  font-weight: 500;
+  color: #ddd;
 }
 
-
-/* =======================
+/* ==================================================
    VALUES
-======================= */
+================================================== */
+.values {
+  padding: 80px 8%;
+  background: #1c1c1c;
+  color: #ddd;
+}
+
+.values h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
 .values-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 30px;
 }
 
 .value-box {
-  background: #ff7a00;
-  color: #000;
-  padding: 14px 30px;
-  border-radius: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: 0.3s;
+}
+
+.value-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.value-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.value-box p {
+  font-size: 18px;
   font-weight: 600;
 }
 
-/* =======================
+/* ==================================================
    PROGRAM TABLE
-======================= */
+================================================== */
 .program-table table {
   width: 100%;
   border-collapse: collapse;
@@ -293,9 +244,9 @@ section h2 {
   border-bottom: 1px solid #333;
 }
 
-/* =======================
+/* ==================================================
    SIGNATURE PROGRAMS
-======================= */
+================================================== */
 .signature-programs {
   background:
     linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.9)),
@@ -317,9 +268,9 @@ section h2 {
   border-left: 4px solid #ff7a00;
 }
 
-/* =======================
+/* ==================================================
    FACILITIES
-======================= */
+================================================== */
 .facilities-container {
   display: flex;
   gap: 20px;
@@ -335,12 +286,12 @@ section h2 {
   border-bottom: 4px solid #ff7a00;
 }
 
-/* =======================
+/* ==================================================
    GALLERY
-======================= */
+================================================== */
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 15px;
 }
 
@@ -349,9 +300,9 @@ section h2 {
   border-radius: 15px;
 }
 
-/* =======================
+/* ==================================================
    CONTACT & MAP
-======================= */
+================================================== */
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -372,19 +323,19 @@ section h2 {
   border: none;
 }
 
-/* =======================
+/* ==================================================
    FOOTER
-======================= */
+================================================== */
 .footer {
   background: #000;
   padding-top: 50px;
 }
 
 .footer-container {
+  padding: 0 8%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 30px;
-  padding: 0 8%;
 }
 
 .footer a {
@@ -396,47 +347,16 @@ section h2 {
   color: #ff7a00;
 }
 
-/* =======================
-   CONTACT SUPPORT
-======================= */
-.contact-support {
-  background: #111;
-  padding: 40px 8%;
-}
-
-.support-item {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-/* =======================
-   FAQ
-======================= */
-.faq {
-  background: #151515;
-}
-
-.faq-item {
-  max-width: 750px;
-  margin: 20px auto;
-  text-align: left;
-}
-
-/* =======================
-   COPYRIGHT
-======================= */
 .footer-bottom {
-  background: #000;
   text-align: center;
   padding: 15px;
   font-size: 14px;
   color: #ccc;
 }
 
-/* =======================
+/* ==================================================
    RESPONSIVE
-======================= */
+================================================== */
 @media (max-width: 768px) {
   .hero-content h2 {
     font-size: 32px;
@@ -447,5 +367,3 @@ section h2 {
     justify-content: center;
   }
 }
-
-
